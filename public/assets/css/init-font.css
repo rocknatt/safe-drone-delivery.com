@@ -1,0 +1,28 @@
+@font-face{
+    /*font-family: 'Hind Black';
+    src: url('../font/Hind-Black.ttf');*/
+}
+@font-face{
+    font-family: 'Hind Bold';
+    src: url('../font/hind-bold.otf');
+}
+@font-face{
+    /*font-family: 'Hind Light';
+    src: url('../font/hind-light.ttf');*/
+}
+@font-face{
+    font-family: 'Hind Medium';
+    src: url('../font/hind-medium.otf');
+}
+@font-face{
+    /*font-family: 'Hind thin';
+    src: url('../font/Hind-Thin.ttf');*/
+}
+@font-face{
+    font-family: 'Hind';
+    src: url('../font/hind-regular.otf');
+}
+@font-face{
+    font-family: 'Hind Semi-Bold';
+    src: url('../font/hind-semibold.otf');
+}
