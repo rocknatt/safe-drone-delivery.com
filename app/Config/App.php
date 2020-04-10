@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://localhost/dev/mzara.mg/public/';
+	public $baseURL = 'http://localhost/dev/safe-drone-delivery.com/public/';
 
 	/*
 	|--------------------------------------------------------------------------

@@ -50,6 +50,30 @@ class BaseSeeder extends \CodeIgniter\Database\Seeder
     }
 
     /**
+     * Generate a random latitude
+     *
+     * @return float
+     */
+    protected function randomLatitude()
+    {
+        $factor = 1000;
+
+        return $this->randomNumber(-90 * $factor, 90 * $factor) / $factor;
+    }
+
+    /**
+     * Generate a random longitude
+     *
+     * @return float
+     */
+    protected function randomLongitude()
+    {
+        $factor = 1000;
+
+        return $this->randomNumber(-180 * $factor, 180 * $factor) / $factor;
+    }
+
+    /**
      * Returns a random element of the array
      *
      * @param array $a

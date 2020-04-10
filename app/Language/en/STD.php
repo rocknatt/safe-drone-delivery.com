@@ -529,9 +529,10 @@ return array(
 	'std_product_visibility_description' => "Change product visibility into your customers.",
 	'std_product_tag_description' => "Product tag",
 	'std_realy_delete_product_q' => "Do you really want to delete this product ? This action is not reversible.",
-	'std_see' => "Voir",
-	'std_see' => "Voir",
-	'std_see' => "Voir",
+
+	'std_order' => "Order",
+	'std_ref' => "Réf",
+	'std_drone' => "Drône",
 	'std_see' => "Voir",
 	'std_see' => "Voir",
 	'std_see' => "Voir",

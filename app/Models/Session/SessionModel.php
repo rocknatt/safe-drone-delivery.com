@@ -173,7 +173,7 @@ class SessionModel extends Model
 
 	public function get_lang()
 	{
-		$default_lang = 'fr';
+		$default_lang = 'en';
 		helper('cookie');
 		$lang = get_cookie($this->cookie_lang_index, true);
 

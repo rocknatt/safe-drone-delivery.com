@@ -27,8 +27,10 @@ class EntityModel extends Model
 
         //init_entity_list
         $this->set_simple_entity();
-        $this->entity_list['payement_mode'] = $this->simple_entity;
-        $this->entity_list['payement_condition'] = $this->simple_entity;
+        // $this->entity_list['payement_mode'] = $this->simple_entity;
+        // $this->entity_list['payement_condition'] = $this->simple_entity;
+
+        $this->entity_list['drone'] = $this->get_drone_entity();
     }
 
     public function set_simple_entity()
@@ -94,6 +96,73 @@ class EntityModel extends Model
                 array('label' => lang('STD.std_date'), 'value' => 'created_at'),
             ),
             'select_list' => array( 'label' => 'designation', 'value' => 'id' ),
+        
+        );
+    }
+
+    public function get_drone_entity()
+    {
+        return array(
+
+            'user_time_stamps' => true,
+            'use_soft_deletes' => true,
+            'allowed_fields' => array('image_id', 'ref', 'name', 'longitude', 'latitude', 'altitude'),
+            'list' => array(
+                //designation
+                array(
+                    'class' => 'col-8 col-sm-6 col-md-1 col-lg-4',
+                    'url' => site_url('entity/{{entity}}/{{id}}'),
+                    'index' => 'ref'
+                ),
+                //comments
+                array(
+                    'class' => 'col-4 col-sm-6 col-lg-8',
+                    'index' => 'name'
+                ),
+            ),
+            'form' => array(
+                'title' => '',
+                'data_list' => array(
+                    array(
+                        'type' => 'text',
+                        'name' => 'ref',
+                        'id' => 'ref',
+                        'label' => lang('STD.std_ref'),
+                        'is_required' => true,
+                        'placeholder' => lang('STD.std_ref'),
+                    ),
+                    array(
+                        'type' => 'text',
+                        'name' => 'name',
+                        'id' => 'name',
+                        'label' => lang('STD.std_name'),
+                        'is_required' => true,
+                        'placeholder' => lang('STD.std_name'),
+                    ),
+                ),
+                
+            ),
+            'validation' => array(
+                'ref' => array(
+                    'label' => lang('STD.std_ref'),
+                    'rules'  => 'required',
+                    'errors' => array(
+                        'required' => lang('STD.std_ref')
+                    )
+                ),
+                'name' => array(
+                    'label' => lang('STD.std_name'),
+                    'rules'  => 'required',
+                    'errors' => array(
+                        'required' => lang('STD.std_name')
+                    )
+                ),
+            ),
+            'order_list' => array(
+                array('label' => lang('STD.std_ref'), 'value' => 'ref'),
+                array('label' => lang('STD.std_name'), 'value' => 'name'),
+            ),
+            'select_list' => array( 'label' => 'ref', 'value' => 'id' ),
         
         );
     }

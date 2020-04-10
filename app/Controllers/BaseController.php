@@ -135,13 +135,13 @@ class BaseController extends Controller
 
 		//Load log
 		//Todo : check if class exist
-		$this->log = new \App\Models\Mzara\LogModel();
-		$this->log->set_session($this->session);
+		// $this->log = new \App\Models\Mzara\LogModel();
+		// $this->log->set_session($this->session);
 
 		//Load user_notification
 		//Todo : check if class exist
-		$this->user_notification = new \App\Models\User\UserNotificationModel();
-		$this->user_notification->set_session($this->session);
+		// $this->user_notification = new \App\Models\User\UserNotificationModel();
+		// $this->user_notification->set_session($this->session);
 	}
 
 	public function return_file($path, $disposition = 'inline')
@@ -235,7 +235,7 @@ class BaseController extends Controller
         $page = $this->request->getGet('page');
 
         if ($limit == null) {
-        	$limit = 10;
+        	$limit = 8;
         }
 
         if ($page == null || $page < 0) {

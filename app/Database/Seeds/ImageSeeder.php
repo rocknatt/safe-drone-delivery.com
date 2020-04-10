@@ -16,7 +16,7 @@ class ImageSeeder extends BaseSeeder
         $folder_path = dirname(FCPATH);
         $folder_path = dirname($folder_path);// outside mzara-folder
 
-        return $folder_path . '/mzara_files/img/';
+        return $folder_path . '/safe-dron-delivery-files/img/';
     }
 
     protected function path($str)

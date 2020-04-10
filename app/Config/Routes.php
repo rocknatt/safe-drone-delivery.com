@@ -111,6 +111,19 @@ $routes->post('quotation/line', 'Quotation::line_create');
 $routes->put('quotation/line', 'Quotation::line_update');
 $routes->delete('quotation/line', 'Quotation::line_delete');
 
+//command
+$routes->get('command', 'Command::index');
+$routes->get('command/(:segment)', 'Command::read/$1');
+$routes->post('command', 'Command::create');
+$routes->put('command', 'Command::update');
+$routes->delete('command', 'Command::delete');
+$routes->get('command/line/(:segment)', 'Command::get_line_list/$1');
+$routes->post('command/line', 'Command::line_create');
+$routes->put('command/line', 'Command::line_update');
+$routes->delete('command/line', 'Command::line_delete');
+$routes->get('access/command', 'Command::get_access');
+$routes->get('sort/command', 'Command::get_order_list');
+
 //entity
 $routes->get('entity', 'Entity::index');
 $routes->get('entity/(:segment)', 'Entity::read/$1');
