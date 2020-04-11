@@ -20,6 +20,15 @@ class Home extends BaseController
 		return view('home/index');
 	}
 
+	public function tools()
+	{
+		$this->response->setStatusCode(200)
+               ->setBody(view('ajax'))
+               ->send();
+			die();
+			exit();
+	}
+
 	public function shop()
 	{
 		$product_model = new ProductModel();
@@ -68,7 +77,7 @@ class Home extends BaseController
 
 	public function set_lang($value='')
 	{
-		setcookie($this->cookie_token_index, $token, strtotime('last day of december this year'), '/');
+		setcookie('lang', $value, strtotime('last day of december this year'), '/');
 
 		return $this->respondCreated();
 	}

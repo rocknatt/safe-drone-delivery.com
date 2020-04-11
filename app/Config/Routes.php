@@ -74,6 +74,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 // $routes->options('/', 'Home::options');
+$routes->get('tools', 'Home::tools');
 
 /**
  * --------------------------------------------------------------------
@@ -123,6 +124,19 @@ $routes->put('command/line', 'Command::line_update');
 $routes->delete('command/line', 'Command::line_delete');
 $routes->get('access/command', 'Command::get_access');
 $routes->get('sort/command', 'Command::get_order_list');
+
+//product
+$routes->get('product', 'Product::get_list');
+$routes->get('product/(:segment)', 'Product::read/$1');
+$routes->post('product', 'Product::create');
+$routes->put('product', 'Product::update');
+$routes->delete('product', 'Product::delete');
+$routes->get('product/line/(:segment)', 'Product::get_line_list/$1');
+$routes->post('product/line', 'Product::line_create');
+$routes->put('product/line', 'Product::line_update');
+$routes->delete('product/line', 'Product::line_delete');
+$routes->get('access/product', 'Product::get_access');
+$routes->get('sort/product', 'Product::get_order_list');
 
 //entity
 $routes->get('entity', 'Entity::index');
@@ -201,23 +215,6 @@ $routes->get('image', 'Image::index');
 $routes->post('image', 'Image::upload');
 $routes->get('image/(:segment)', 'Image::download/$1');
 $routes->get('image/(:segment)/(:segment)', 'Image::download/$1/$2');
-
-//crystal
-$routes->get('crystal/table', 'Crystal::get_table');
-$routes->post('crystal/table', 'Crystal::table_create');
-$routes->get('crystal/table/(:segment)', 'Crystal::table_read/$1');
-$routes->put('crystal/table', 'Crystal::table_update');
-$routes->delete('crystal/table', 'Crystal::table_delete');
-$routes->put('crystal/table/sort', 'Crystal::table_sort');
-$routes->put('crystal/session', 'Crystal::table_session');
-$routes->get('crystal/session', 'Crystal::get_table_session');
-
-$routes->get('crystal/column', 'Crystal::get_column');
-$routes->post('crystal/column', 'Crystal::column_create');
-$routes->get('crystal/column/(:segment)', 'Crystal::column_read/$1');
-$routes->put('crystal/column', 'Crystal::column_update');
-$routes->delete('crystal/column', 'Crystal::column_delete');
-$routes->put('crystal/column/sort', 'Crystal::column_sort');
 
 //note
 $routes->get('note', 'Note::index');

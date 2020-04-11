@@ -1,15 +1,11 @@
 <?php 
 
-namespace App\Controllers\Mzara;
+namespace App\Controllers;
 
 use App\Models\Mzara\Product\ProductModel;
 use App\Models\Mzara\Product\ProductCategoryModel;
 use App\Models\Mzara\Product\ProductBrandModel;
 use App\Models\Mzara\Product\ProductTagModel;
-use App\Models\Mzara\Shop\ShopUserModel;
-use App\Models\Mzara\Shop\ShopModel;
-use App\Models\Mzara\LoveEntityModel;
-use App\Models\Mzara\TagModel;
 use App\Models\ImageModel;
 use App\Models\GalleryModel;
 
@@ -69,7 +65,7 @@ class Product extends BaseController
             $title = $this->get_title($product_category['designation']);
         }
 
-        $this->log->write('product');
+        // $this->log->write('product');
 
         return $this->respond(array(
             'product_category' => $product_category,
@@ -460,9 +456,9 @@ class Product extends BaseController
         /**
          * check tag_list
          */
-        $payload['tag_list_option'] = $this->model->get_tag_list($payload['id']);
+        // $payload['tag_list_option'] = $this->model->get_tag_list($payload['id']);
 
-        $this->log->write('product', $id);
+        // $this->log->write('product', $id);
 
         $title = $this->get_title($payload['name']);
 

@@ -17,6 +17,7 @@ namespace App\Controllers;
 use App\Models\Session\SessionModel;
 use App\Models\HubModel;
 use CodeIgniter\Controller;
+use Config\Services;
 
 
 class BaseController extends Controller
@@ -70,6 +71,9 @@ class BaseController extends Controller
 		//session
 		if (!is_cli()) {
 			$this->session = new SessionModel();
+
+			$local = $this->session->get_lang();
+			Services::language($local);
 		}
 		
 		//folder_path
@@ -118,14 +122,14 @@ class BaseController extends Controller
 		}
 
 		//load ajax bundle
-		if (ENVIRONMENT === 'production' && !is_cli() && !$this->request->isAJAX())
-		{
-			$this->response->setStatusCode(200)
-               ->setBody(view('ajax'))
-               ->send();
-			die();
-			exit();
-		}
+		// if (ENVIRONMENT === 'production' && !is_cli() && !$this->request->isAJAX())
+		// {
+		// 	$this->response->setStatusCode(200)
+  //              ->setBody(view('ajax'))
+  //              ->send();
+		// 	die();
+		// 	exit();
+		// }
 
 		$this->plateform_name = 'Safe drone delivery';
 		

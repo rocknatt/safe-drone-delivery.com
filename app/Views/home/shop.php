@@ -17,7 +17,7 @@
 		<?= $this->include('layout/side-menu') ?>
 
 		<div class="w3l_banner_nav_right">
-			<div class="w3l_banner_nav_right_banner4" style="background-image: url('<?php echo site_url('assets/images/shop-cover-1.jpeg') ?>');">
+			<div class="w3l_banner_nav_right_banner4" style="background-image: url('<?php echo site_url('assets/img/shop-cover-1.jpeg') ?>');">
 				
 			</div>
 			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_sub">
@@ -33,7 +33,7 @@
 							<div class="hover14 column">
 								<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
 									<div class="agile_top_brand_left_grid_pos">
-										<img src="images/offer.png" alt=" " class="img-responsive" />
+										<img src="img/offer.png" alt=" " class="img-responsive" />
 									</div>
 									<div class="agile_top_brand_left_grid1">
 										<figure>

@@ -30,8 +30,8 @@ class SessionModel extends Model
     public $user_identity;
     public $lang;
     private $user_token;
-    private $cookie_token_index = 'id';
-    private $cookie_lang_index = 'lang';
+    public $cookie_token_index = 'id';
+    public $cookie_lang_index = 'lang';
 
     public function __construct(ConnectionInterface &$db = null, ValidationInterface $validation = null)
 	{

@@ -23,7 +23,7 @@
 			<?php 
 				$product_list = array(
 					array(
-						'img_url' => site_url('assets/images/1.png'),
+						'img_url' => site_url('assets/img/1.png'),
 						'name' => 'Lorem ipsum dolor',
 						'amount' => rand(0, 100000),
 						'discount_amount' => rand(20, 500000),
@@ -31,7 +31,7 @@
 						'currency_code' => 'USD',
 					),
 					array(
-						'img_url' => site_url('assets/images/2.png'),
+						'img_url' => site_url('assets/img/2.png'),
 						'name' => 'Lorem ipsum dolor',
 						'amount' => rand(0, 100000),
 						'discount_amount' => rand(20, 500000),
@@ -39,7 +39,7 @@
 						'currency_code' => 'USD',
 					),
 					array(
-						'img_url' => site_url('assets/images/3.png'),
+						'img_url' => site_url('assets/img/3.png'),
 						'name' => 'Lorem ipsum dolor',
 						'amount' => rand(0, 100000),
 						'discount_amount' => rand(20, 500000),
@@ -47,7 +47,7 @@
 						'currency_code' => 'USD',
 					),
 					array(
-						'img_url' => site_url('assets/images/4.png'),
+						'img_url' => site_url('assets/img/4.png'),
 						'name' => 'Lorem ipsum dolor',
 						'amount' => rand(0, 100000),
 						'discount_amount' => rand(20, 500000),

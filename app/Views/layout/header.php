@@ -41,7 +41,7 @@
 		<div class="container">
 			<div class="w3ls_logo_products_left">
 				<a href="<?php echo site_url('home') ?>">
-					<img src="<?php echo site_url('assets/images/logo.png') ?>" >
+					<img src="<?php echo site_url('assets/img/logo.png') ?>" >
 				</a>
 			</div>
 			<div class="w3ls_logo_products_left1">

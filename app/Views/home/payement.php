@@ -67,7 +67,7 @@
 		                    <div id="tab4" class="tab-grid" style="display: block;">
 									<div class="row">
 		                        <div class="col-md-6">
-		                            <img class="pp-img" src="images/paypal.png" alt="Image Alternative text" title="Image Title">
+		                            <img class="pp-img" src="img/paypal.png" alt="Image Alternative text" title="Image Title">
 		                            <p>Important: You will be redirected to PayPal's website to securely complete your payment.</p><a class="btn btn-primary">Checkout via Paypal</a>	
 		                        </div>
 		                        <div class="col-md-6">

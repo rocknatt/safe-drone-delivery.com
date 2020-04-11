@@ -10,7 +10,7 @@
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
-							<div class="w3l_banner_nav_right_banner" style="background-image: url('<?php echo site_url('assets/images/drone-1.jpg') ?>');">
+							<div class="w3l_banner_nav_right_banner" style="background-image: url('<?php echo site_url('assets/img/drone-1.jpg') ?>');">
 								<h3>Make your <span>food</span> with Spicy.</h3>
 								<div class="more">
 									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
@@ -18,7 +18,7 @@
 							</div>
 						</li>
 						<li>
-							<div class="w3l_banner_nav_right_banner1" style="background-image: url('<?php echo site_url('assets/images/drone-2.jpg') ?>');">
+							<div class="w3l_banner_nav_right_banner1" style="background-image: url('<?php echo site_url('assets/img/drone-2.jpg') ?>');">
 								<h3>Make your <span>food</span> with Spicy.</h3>
 								<div class="more">
 									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
@@ -26,7 +26,7 @@
 							</div>
 						</li>
 						<li>
-							<div class="w3l_banner_nav_right_banner2" style="background-image: url('<?php echo site_url('assets/images/drone-3.jpg') ?>');">
+							<div class="w3l_banner_nav_right_banner2" style="background-image: url('<?php echo site_url('assets/img/drone-3.jpg') ?>');">
 								<h3>upto <i>50%</i> off.</h3>
 								<div class="more">
 									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
@@ -58,28 +58,28 @@
 	<?php 
 		$product_list = array(
 			array(
-				'img_url' => site_url('assets/images/1.png'),
+				'img_url' => site_url('assets/img/1.png'),
 				'name' => 'Lorem ipsum dolor',
 				'amount' => rand(0, 100000),
 				'discount_amount' => rand(20, 500000),
 				'currency_code' => 'USD',
 			),
 			array(
-				'img_url' => site_url('assets/images/2.png'),
+				'img_url' => site_url('assets/img/2.png'),
 				'name' => 'Lorem ipsum dolor',
 				'amount' => rand(0, 100000),
 				'discount_amount' => rand(20, 500000),
 				'currency_code' => 'USD',
 			),
 			array(
-				'img_url' => site_url('assets/images/3.png'),
+				'img_url' => site_url('assets/img/3.png'),
 				'name' => 'Lorem ipsum dolor',
 				'amount' => rand(0, 100000),
 				'discount_amount' => rand(20, 500000),
 				'currency_code' => 'USD',
 			),
 			array(
-				'img_url' => site_url('assets/images/4.png'),
+				'img_url' => site_url('assets/img/4.png'),
 				'name' => 'Lorem ipsum dolor',
 				'amount' => rand(0, 100000),
 				'discount_amount' => rand(20, 500000),
@@ -98,7 +98,7 @@
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid">
-							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
+							<div class="tag"><img src="img/tag.png" alt=" " class="img-responsive" /></div>
 							<div class="agile_top_brand_left_grid1">
 								<figure>
 									<div class="snipcart-item block" >

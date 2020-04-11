@@ -51,11 +51,9 @@ class ProductModel extends Model
 
         if ($model != null) {
             $model = $model[0];
-            $love_model = new LoveEntityModel();
 
             $model = $this->write_accessibility($model);
-            $model['tag_list'] = explode(',', $model['tag_list']);
-            $model['is_loved'] = $love_model->is_loved('product', $model['id'], $this->session->user_identity['id']);
+            // $model['tag_list'] = explode(',', $model['tag_list']);
         }
 
         return $model;
